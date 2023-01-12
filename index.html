@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <meta name="description" content="To-Do-List" />
+    <meta name="author" content="Sohui" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>TO DO LIST</header>
+    <section class="container">
+      <section class="list">
+        <button class="add__btn list__add__btn">목록 추가</button>
+        <ul>
+          <li>
+            <span>오늘 할 일</span>
+            <button>❌</button>
+          </li>
+          <li>
+            <span>내일 할 일</span>
+            <button>❌</button>
+          </li>
+        </ul>
+      </section>
+      <section class="todo">
+        <div class="todo__title">
+          <h1 class="title">오늘 할 일</h1>
+          <div class="count">전체: 0 | 진행중: 1 | 완료: 1</div>
+        </div>
+        <div class="todo__contents">
+          <div class="all">
+            <div>
+              <input type="checkbox" id="all__check" />
+              <label for="all__check">전체 선택</label>
+            </div>
+            <button class="all__delete">전체 삭제</button>
+          </div>
+          <div class="contents">
+            <div class="content">
+              <div class="content__box">
+                <input type="checkbox" id="content1" />
+                <label for="content1">자바스크립트 공부1</label>
+              </div>
+              <button class="content__delete" id="content__delete1">❌</button>
+            </div>
+            <div class="content">
+              <div class="content__box">
+                <input type="checkbox" id="content2" />
+                <label for="content2">자바스크립트 공부2</label>
+              </div>
+              <button class="content__delete" id="content__delete2">❌</button>
+            </div>
+          </div>
+        </div>
+        <div class="todo__add">
+          <input type="text" id="todo__add__input" />
+          <button class="add__btn todo__add__btn">추가</button>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

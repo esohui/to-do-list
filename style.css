@@ -1,0 +1,98 @@
+body {
+  width: 700px;
+  margin: auto;
+  border: 1px solid;
+  padding: 30px 40px;
+  margin-top: 1rem;
+}
+header {
+  margin-bottom: 22px;
+  font-size: 2rem;
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-size: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+}
+.add__btn {
+  padding: 9px 10px;
+  border-radius: 6px;
+  background-color: #e7365b;
+  color: #fff;
+}
+
+/* list */
+.list {
+  width: 30%;
+}
+.list ul {
+  padding: 0;
+}
+.list ul li {
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+/* todo */
+.todo {
+  width: 65%;
+}
+.todo__title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  align-items: flex-end;
+  padding-bottom: 12px;
+}
+.title {
+  margin: 0;
+  font-size: 2rem;
+}
+.count {
+  color: gray;
+}
+.todo__contents {
+  margin: 15px 6px;
+  height: 400px;
+}
+.all {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  margin: 6px 0;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__delete {
+  padding: 4px;
+}
+
+/* todo add */
+.todo__add {
+  margin: 12px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo__add input {
+  font-size: 1rem;
+  width: 80%;
+  padding: 8px;
+}
+.todo__add__btn {
+  font-size: 1rem;
+  width: 14%;
+  padding: 9px;
+}
