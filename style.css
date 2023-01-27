@@ -28,19 +28,54 @@ button {
   border-radius: 6px;
   background-color: #e7365b;
   color: #fff;
+  transition: background-color 0.2s;
+}
+.add__btn:hover {
+  background-color: #bc2242;
+}
+input[type='text'] {
+  font-size: 1rem;
+  padding: 8px;
 }
 
 /* list */
 .list {
   width: 30%;
 }
-.list ul {
+.list__box {
   padding: 0;
 }
-.list ul li {
+.list__box__each {
   padding-bottom: 8px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.list__box__each div {
+  padding: 2px 0;
+  width: 100%;
+}
+.list__delete__btn {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.list__box__each:hover > .list__delete__btn {
+  opacity: 1;
+}
+.add__list__box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  display: none;
+}
+.add__list__input {
+  width: 80%;
+}
+.add__list__btn__real {
+  width: 20%;
+  font-size: 32px;
+  color: #e7365b;
 }
 /* todo */
 .todo {
@@ -75,23 +110,33 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.content__box {
+  padding: 4px 0;
+}
 .content__delete {
+  opacity: 0;
   padding: 4px;
+  transition: opacity 0.2s;
+}
+.content:hover > .content__delete {
+  opacity: 1;
+}
+input[name='todo']:checked + label {
+  text-decoration: line-through;
+  color: darkgray;
 }
 
-/* todo add */
-.todo__add {
+/* add__todo */
+.add__todo {
   margin: 12px 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.todo__add input {
-  font-size: 1rem;
+.add__todo input {
   width: 80%;
-  padding: 8px;
 }
-.todo__add__btn {
+.add__todo__btn {
   font-size: 1rem;
   width: 14%;
   padding: 9px;

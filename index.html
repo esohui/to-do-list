@@ -9,28 +9,29 @@
     <meta name="author" content="Sohui" />
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/fdb0bc6f32.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>TO DO LIST</header>
     <section class="container">
       <section class="list">
-        <button class="add__btn list__add__btn">목록 추가</button>
-        <ul>
-          <li>
-            <span>오늘 할 일</span>
-            <button>❌</button>
-          </li>
-          <li>
-            <span>내일 할 일</span>
-            <button>❌</button>
+        <button class="add__btn add__list__btn">목록 추가</button>
+        <div class="add__list__box">
+          <input type="text" class="add__list__input" />
+          <button class="add__list__btn__real">+</button>
+        </div>
+        <ul class="list__box">
+          <li class="list__box__each">
+            <div>오늘 할 일</div>
+            <button class="list__delete__btn"><i class="fa-solid fa-trash-can"></i></button>
           </li>
         </ul>
       </section>
       <section class="todo">
         <div class="todo__title">
           <h1 class="title">오늘 할 일</h1>
-          <div class="count">전체: 0 | 진행중: 1 | 완료: 1</div>
+          <div class="count"></div>
         </div>
         <div class="todo__contents">
           <div class="all">
@@ -43,23 +44,23 @@
           <div class="contents">
             <div class="content">
               <div class="content__box">
-                <input type="checkbox" id="content1" />
-                <label for="content1">자바스크립트 공부1</label>
+                <input type="checkbox" id="content1" name="todo" />
+                <label for="content1">청소하기</label>
               </div>
-              <button class="content__delete" id="content__delete1">❌</button>
+              <button class="content__delete"><i class="fa-solid fa-trash-can"></i></button>
             </div>
             <div class="content">
               <div class="content__box">
-                <input type="checkbox" id="content2" />
-                <label for="content2">자바스크립트 공부2</label>
+                <input type="checkbox" id="content2" name="todo" />
+                <label for="content2">장보기</label>
               </div>
-              <button class="content__delete" id="content__delete2">❌</button>
+              <button class="content__delete"><i class="fa-solid fa-trash-can"></i></button>
             </div>
           </div>
         </div>
-        <div class="todo__add">
-          <input type="text" id="todo__add__input" />
-          <button class="add__btn todo__add__btn">추가</button>
+        <div class="add__todo">
+          <input type="text" id="add__todo__input" />
+          <button class="add__btn add__todo__btn">추가</button>
         </div>
       </section>
     </section>
